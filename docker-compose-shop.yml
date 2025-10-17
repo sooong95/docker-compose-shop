@@ -67,20 +67,12 @@ services:
     container_name: sj-shop-service-v1
     ports:
       - "8085:8080"
-    depends_on:
-      - sj-gateway
-      - sj-shop-db
-      - sj-config-server
 
 #  sj-shop-service-v2:
 #    image: sooong137/sj-shop-service:add-redis-2.0
 #    container_name: sj-shop-service-add-redis-v2
 #    ports:
 #      - "8095:8080"
-#    depends_on:
-#      - sj-gateway
-#      - sj-shop-db
-#      - sj-config-server
 
 volumes:
   rabbitmq_data:
